@@ -11,28 +11,680 @@
 <body data-page-id="cbs2">
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-7 mx-auto">
+            <div class="col-lg-10 mx-auto">
                 <ul class="timeline">
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2>Temaprojekt – LØSNINGSFORSLAG</h2>
-                        <p>Case: KitchenPro A/S</p>
+                        <p>Case: KitchenPro A/S. Produktionslinjen har <b>1.000 timer</b> pr. måned. Faste omkostninger er 40.000 kr.</p>
+                        <p>DB = salgspris − VE. MFB = DB − markedsføring pr. stk. Ved knap kapacitet rangeres efter MFB pr. time. Blender og røremaskine ender på samme MFB pr. time, så der er to optimale planer med samme overskud.</p>
                     </li>
+
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
-                        <ol type="A">
-                            <li>DB: Blender 240, Røremaskine 480, Elkedel 160 kr.</li>
-                            <hr>
-                            <li>MFB: Blender 200, Røremaskine 400, Elkedel 140 kr.</li>
-                            <hr>
-                            <li>MFB/time: Blender 100, Røremaskine 100, Elkedel 140. Rangering: <b>Elkedel, derefter Blender og Røremaskine (lige)</b>.</li>
-                            <hr>
-                            <li>Elkedel 400 stk. (400 t). Rest 600 t. Blender 250 stk. (500 t). Rest 100 t ⇒ Røremaskine 25 stk. Produktion: <b>Elkedel 400, Blender 250, Røremaskine 25</b>.</li>
-                            <hr>
-                            <li>MFB = 400·140 + 250·200 + 25·400 = 116.000. Overskud = 116.000 − 40.000 = <b>76.000 kr.</b></li>
-                            <hr>
-                            <li>Uden knap kapacitet produceres op til efterspørgslen for alle produkter med positivt MFB. Rangering pr. time er unødvendig.</li>
-                        </ol>
+                        <h3>A. Dækningsbidrag pr. stk.</h3>
+                        <p>DB = salgspris − variable enhedsomkostninger (VE).</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Blender</th>
+                                        <th class="text-right">Røremaskine</th>
+                                        <th class="text-right">Elkedel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Salgspris</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">900</td>
+                                        <td class="text-right">250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VE</td>
+                                        <td class="text-right">160</td>
+                                        <td class="text-right">420</td>
+                                        <td class="text-right">90</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>DB pr. stk.</td>
+                                        <td class="text-right">400 − 160 = 240</td>
+                                        <td class="text-right">900 − 420 = 480</td>
+                                        <td class="text-right">250 − 90 = 160</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>DB pr. stk.: <b style="color:#006400;">Blender 240 kr., røremaskine 480 kr., elkedel 160 kr.</b></p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>B. Markedsføringsbidrag pr. stk.</h3>
+                        <p>MFB = DB − markedsføring pr. stk.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Blender</th>
+                                        <th class="text-right">Røremaskine</th>
+                                        <th class="text-right">Elkedel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DB pr. stk.</td>
+                                        <td class="text-right">240</td>
+                                        <td class="text-right">480</td>
+                                        <td class="text-right">160</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Markedsføring pr. stk.</td>
+                                        <td class="text-right">40</td>
+                                        <td class="text-right">80</td>
+                                        <td class="text-right">20</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>MFB pr. stk.</td>
+                                        <td class="text-right">240 − 40 = 200</td>
+                                        <td class="text-right">480 − 80 = 400</td>
+                                        <td class="text-right">160 − 20 = 140</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>MFB pr. stk.: <b style="color:#006400;">Blender 200 kr., røremaskine 400 kr., elkedel 140 kr.</b> Røremaskinen har det højeste bidrag pr. stk.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>C. MFB pr. time og rangering</h3>
+                        <p>MFB pr. time = MFB pr. stk. / timer pr. stk.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Blender</th>
+                                        <th class="text-right">Røremaskine</th>
+                                        <th class="text-right">Elkedel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>MFB pr. stk.</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">140</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timer pr. stk.</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">4</td>
+                                        <td class="text-right">1</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>MFB pr. time</td>
+                                        <td class="text-right">200 / 2 = 100</td>
+                                        <td class="text-right">400 / 4 = 100</td>
+                                        <td class="text-right">140 / 1 = 140</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DB pr. time</td>
+                                        <td class="text-right">240 / 2 = 120</td>
+                                        <td class="text-right">480 / 4 = 120</td>
+                                        <td class="text-right">160 / 1 = 160</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Markedsføring pr. time</td>
+                                        <td class="text-right">40 / 2 = 20</td>
+                                        <td class="text-right">80 / 4 = 20</td>
+                                        <td class="text-right">20 / 1 = 20</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Rang efter MFB pr. time</td>
+                                        <td class="text-right">2 (lige)</td>
+                                        <td class="text-right">2 (lige)</td>
+                                        <td class="text-right" style="color:#006400;">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>MFB pr. time: <b style="color:#006400;">elkedel 140 kr., blender 100 kr., røremaskine 100 kr.</b> Rangering: <b style="color:#006400;">elkedel først, derefter blender og røremaskine lige.</b></p>
+                        <p>De to sidste er lige, fordi de også har samme DB pr. time (120 kr.) og samme markedsføring pr. time (20 kr.). En time på blenderen kaster det samme MFB af sig som en time på røremaskinen. Elkedlen ligger foran, selv om den har det laveste MFB pr. stk.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>D. Optimal produktion</h3>
+                        <p>Timer ved fuld efterspørgsel:</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Maks. efterspørgsel</th>
+                                        <th class="text-right">Timer pr. stk.</th>
+                                        <th class="text-right">Timer ved fuld efterspørgsel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">250 · 2 = 500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">4</td>
+                                        <td class="text-right">120 · 4 = 480</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">400 · 1 = 400</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold">
+                                        <td>I alt ved fuld efterspørgsel</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">1.380 timer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timer til rådighed</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">1.000 timer</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#f4cccc;">
+                                        <td>Der mangler</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">380 timer</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <p>1.380 timer ønskes, 1.000 timer haves. Kapaciteten er knap.</p>
+
+                        <h5>Plan 1. Elkedel, derefter blender, til sidst røremaskine</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trin</th>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Timer ved start</th>
+                                        <th>Hvor mange kan vi nå?</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer brugt</th>
+                                        <th class="text-right">Timer tilbage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Elkedel<br><small>140 kr./time</small></td>
+                                        <td class="text-right">1.000</td>
+                                        <td>1.000 / 1 = 1.000 stk., men efterspørgslen er 400. Vi tager 400.</td>
+                                        <td class="text-right">400 stk.</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Blender<br><small>100 kr./time</small></td>
+                                        <td class="text-right">600</td>
+                                        <td>600 / 2 = 300 stk., men efterspørgslen er 250. Vi tager 250.</td>
+                                        <td class="text-right">250 stk.</td>
+                                        <td class="text-right">500</td>
+                                        <td class="text-right">100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Røremaskine<br><small>100 kr./time</small></td>
+                                        <td class="text-right">100</td>
+                                        <td>100 / 4 = 25 stk. Efterspørgslen er 120, men timerne rækker kun til 25.</td>
+                                        <td class="text-right">25 stk.</td>
+                                        <td class="text-right">100</td>
+                                        <td class="text-right">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Efterspørgsel</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Ikke produceret</th>
+                                        <th class="text-right">Timer</th>
+                                        <th class="text-right">MFB i alt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">400 · 140 = 56.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250</td>
+                                        <td class="text-right">250</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">500</td>
+                                        <td class="text-right">250 · 200 = 50.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">25</td>
+                                        <td class="text-right">95</td>
+                                        <td class="text-right">100</td>
+                                        <td class="text-right">25 · 400 = 10.000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>I alt</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">1.000</td>
+                                        <td class="text-right">116.000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <h5>Plan 2. Elkedel, derefter røremaskine, til sidst blender</h5>
+                        <p>Blender og røremaskine har samme MFB pr. time, så rækkefølgen mellem dem kan byttes. Elkedlen ligger stadig først.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trin</th>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Timer ved start</th>
+                                        <th>Hvor mange kan vi nå?</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer brugt</th>
+                                        <th class="text-right">Timer tilbage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Elkedel<br><small>140 kr./time</small></td>
+                                        <td class="text-right">1.000</td>
+                                        <td>Efterspørgslen er 400, og timerne rækker. Vi tager 400.</td>
+                                        <td class="text-right">400 stk.</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Røremaskine<br><small>100 kr./time</small></td>
+                                        <td class="text-right">600</td>
+                                        <td>120 · 4 = 480 timer. Hele efterspørgslen kan dækkes.</td>
+                                        <td class="text-right">120 stk.</td>
+                                        <td class="text-right">480</td>
+                                        <td class="text-right">120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Blender<br><small>100 kr./time</small></td>
+                                        <td class="text-right">120</td>
+                                        <td>120 / 2 = 60 stk. Efterspørgslen er 250, men timerne rækker kun til 60.</td>
+                                        <td class="text-right">60 stk.</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Efterspørgsel</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Ikke produceret</th>
+                                        <th class="text-right">Timer</th>
+                                        <th class="text-right">MFB i alt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">400 · 140 = 56.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">480</td>
+                                        <td class="text-right">120 · 400 = 48.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250</td>
+                                        <td class="text-right">60</td>
+                                        <td class="text-right">190</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">60 · 200 = 12.000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>I alt</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">1.000</td>
+                                        <td class="text-right">116.000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <h5>De to planer ved siden af hinanden</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Plan 1<br><small>blender før røremaskine</small></th>
+                                        <th class="text-right">Plan 2<br><small>røremaskine før blender</small></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400 stk. · 400 timer</td>
+                                        <td class="text-right">400 stk. · 400 timer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250 stk. · 500 timer</td>
+                                        <td class="text-right">60 stk. · 120 timer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">25 stk. · 100 timer</td>
+                                        <td class="text-right">120 stk. · 480 timer</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Timer i alt</td>
+                                        <td class="text-right">1.000</td>
+                                        <td class="text-right">1.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Samlet MFB</td>
+                                        <td class="text-right">116.000</td>
+                                        <td class="text-right">116.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>De 600 timer efter elkedlen giver 100 kr. i MFB pr. time, uanset om de lægges på blender eller røremaskine: 600 · 100 = 60.000 kr. Sammen med elkedlens 56.000 kr. bliver MFB 116.000 kr. i begge planer.</p>
+                        <p>Optimal produktion er derfor enten <b style="color:#006400;">elkedel 400, blender 250, røremaskine 25</b> eller <b style="color:#006400;">elkedel 400, røremaskine 120, blender 60</b>.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>E. Månedligt overskud</h3>
+                        <p>De to planer har forskellig omsætning og forskellige variable omkostninger, men samme DB, samme markedsføring og samme MFB. Derfor bliver overskuddet det samme.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th>Plan 1</th>
+                                        <th class="text-right">Kr.</th>
+                                        <th>Plan 2</th>
+                                        <th class="text-right">Kr.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Omsætning</td>
+                                        <td>400 · 250 + 250 · 400 + 25 · 900</td>
+                                        <td class="text-right">222.500</td>
+                                        <td>400 · 250 + 120 · 900 + 60 · 400</td>
+                                        <td class="text-right">232.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Variable omkostninger</td>
+                                        <td>400 · 90 + 250 · 160 + 25 · 420</td>
+                                        <td class="text-right">86.500</td>
+                                        <td>400 · 90 + 120 · 420 + 60 · 160</td>
+                                        <td class="text-right">96.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Dækningsbidrag</td>
+                                        <td>222.500 − 86.500</td>
+                                        <td class="text-right">136.000</td>
+                                        <td>232.000 − 96.000</td>
+                                        <td class="text-right">136.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Markedsføring</td>
+                                        <td>400 · 20 + 250 · 40 + 25 · 80</td>
+                                        <td class="text-right">20.000</td>
+                                        <td>400 · 20 + 120 · 80 + 60 · 40</td>
+                                        <td class="text-right">20.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>MFB</td>
+                                        <td>136.000 − 20.000</td>
+                                        <td class="text-right">116.000</td>
+                                        <td>136.000 − 20.000</td>
+                                        <td class="text-right">116.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Faste omkostninger</td>
+                                        <td></td>
+                                        <td class="text-right">40.000</td>
+                                        <td></td>
+                                        <td class="text-right">40.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Overskud</td>
+                                        <td>116.000 − 40.000</td>
+                                        <td class="text-right" style="color:#006400;">76.000</td>
+                                        <td>116.000 − 40.000</td>
+                                        <td class="text-right" style="color:#006400;">76.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Kontrol af MFB: plan 1 er 56.000 + 50.000 + 10.000 = 116.000. Plan 2 er 56.000 + 48.000 + 12.000 = 116.000. Overskuddet er <b style="color:#006400;">76.000 kr.</b> i begge planer.</p>
+                        <p>Plan 2 har 9.500 kr. højere omsætning, men også 9.500 kr. højere variable omkostninger. Dækningsbidraget rykker sig ikke, fordi de to produkter giver det samme pr. time.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>F. Hvis kapaciteten ikke er knap</h3>
+                        <p>Uden flaskehals kan alle tre produkter produceres op til efterspørgslen. Alle har positivt MFB, så ingen af dem udelades. Rangering efter MFB pr. time ændrer ikke planen, fordi der er timer nok til det hele.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer</th>
+                                        <th class="text-right">MFB pr. stk.</th>
+                                        <th class="text-right">MFB i alt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250</td>
+                                        <td class="text-right">500</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">250 · 200 = 50.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">480</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">120 · 400 = 48.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">140</td>
+                                        <td class="text-right">400 · 140 = 56.000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>I alt</td>
+                                        <td></td>
+                                        <td class="text-right">1.380</td>
+                                        <td></td>
+                                        <td class="text-right">154.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Faste omkostninger</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">40.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Overskud</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">114.000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <p>Det kræver 1.380 timer. Med de 1.000 timer, linjen faktisk har, kan planen ikke gennemføres. Forskellen i MFB er 154.000 − 116.000 = <b>38.000 kr.</b>, som er de 380 timer, der mangler, ganget med 100 kr. pr. time på de to lige produkter.</p>
+
+                        <h5>Til sammenligning: rangering efter MFB pr. stk.</h5>
+                        <p>Røremaskinen har det højeste MFB pr. stk. (400 kr.), men kun 100 kr. pr. time. Lægges den først, fortrænger den elkedler, der giver 140 kr. pr. time.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trin</th>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Timer ved start</th>
+                                        <th>Beslutning</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer</th>
+                                        <th class="text-right">MFB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Røremaskine<br><small>400 kr./stk.</small></td>
+                                        <td class="text-right">1.000</td>
+                                        <td>120 · 4 = 480 timer. Hele efterspørgslen dækkes.</td>
+                                        <td class="text-right">120 stk.</td>
+                                        <td class="text-right">480</td>
+                                        <td class="text-right">48.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Blender<br><small>200 kr./stk.</small></td>
+                                        <td class="text-right">520</td>
+                                        <td>250 · 2 = 500 timer. Hele efterspørgslen dækkes.</td>
+                                        <td class="text-right">250 stk.</td>
+                                        <td class="text-right">500</td>
+                                        <td class="text-right">50.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Elkedel<br><small>140 kr./stk.</small></td>
+                                        <td class="text-right">20</td>
+                                        <td>20 / 1 = 20 stk. Efterspørgslen er 400.</td>
+                                        <td class="text-right">20 stk.</td>
+                                        <td class="text-right">20</td>
+                                        <td class="text-right">2.800</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#f4cccc;">
+                                        <td colspan="5">I alt ved rangering efter MFB pr. stk.</td>
+                                        <td class="text-right">1.000</td>
+                                        <td class="text-right">100.800</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Optimal plan</th>
+                                        <th class="text-right">Rang efter MFB pr. stk.</th>
+                                        <th class="text-right">Uden knap kapacitet</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Elkedel</td>
+                                        <td class="text-right">400 stk.</td>
+                                        <td class="text-right">20 stk.</td>
+                                        <td class="text-right">400 stk.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blender</td>
+                                        <td class="text-right">250 eller 60 stk.</td>
+                                        <td class="text-right">250 stk.</td>
+                                        <td class="text-right">250 stk.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Røremaskine</td>
+                                        <td class="text-right">25 eller 120 stk.</td>
+                                        <td class="text-right">120 stk.</td>
+                                        <td class="text-right">120 stk.</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Samlet MFB</td>
+                                        <td class="text-right">116.000</td>
+                                        <td class="text-right">100.800</td>
+                                        <td class="text-right">154.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Overskud</td>
+                                        <td class="text-right" style="color:#006400;">76.000</td>
+                                        <td class="text-right">60.800</td>
+                                        <td class="text-right">114.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Rangering efter MFB pr. stk. koster 116.000 − 100.800 = <b>15.200 kr.</b> i MFB i forhold til den optimale plan. De 380 timer, der ikke er til rådighed, er netop derfor, at rækkefølgen betyder noget. Når timerne ikke er knappe, produceres alt med positivt MFB, og rækkefølgen er ligegyldig.</p>
                     </li>
                 </ul>
             </div>

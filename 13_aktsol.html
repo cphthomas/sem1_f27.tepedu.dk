@@ -11,27 +11,460 @@
 <body data-page-id="cbs2">
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-7 mx-auto">
+            <div class="col-lg-10 mx-auto">
                 <ul class="timeline">
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
                         <h2>Aktivitet – MFB og knap kapacitet<br>LØSNINGSFORSLAG</h2>
+                        <p>SportWear A/S. Maskinen har <b>800 timer</b> pr. måned. Faste omkostninger er 25.000 kr.</p>
+                        <p>DB = salgspris − variable enhedsomkostninger. MFB = DB − markedsføring pr. stk. Ved knap kapacitet rangeres efter MFB pr. maskintime, og timerne lægges ud i den rækkefølge, indtil de 800 timer er brugt.</p>
                     </li>
+
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
-                        <ol type="A">
-                            <li>DB: A = 200−80 = <b>120</b>, B = 350−150 = <b>200</b>, C = 120−40 = <b>80</b> kr.</li>
-                            <hr>
-                            <li>MFB: A = 120−20 = <b>100</b>, B = 200−40 = <b>160</b>, C = 80−10 = <b>70</b> kr.</li>
-                            <hr>
-                            <li>MFB/time: A = 100/2 = <b>50</b>, B = 160/5 = <b>32</b>, C = 70/1 = <b>70</b>. Rangering: <b>C, A, B</b>.</li>
-                            <hr>
-                            <li>C: 300 stk. (300 timer). A: 200 stk. (400 timer). Rest 100 timer ⇒ B: 100/5 = <b>20 stk.</b> Produktion: <b>C 300, A 200, B 20</b>.</li>
-                            <hr>
-                            <li>Samlet MFB = 300·70 + 200·100 + 20·160 = 21.000 + 20.000 + 3.200 = 44.200. Overskud = 44.200 − 25.000 = <b>19.200 kr.</b></li>
-                            <hr>
-                            <li>Flaskehalsen er timer. Ét stk. B giver højt MFB, men bruger 5 timer. MFB pr. time viser, hvad kapaciteten reelt kaster af sig.</li>
-                        </ol>
+                        <h3>A. Dækningsbidrag pr. stk.</h3>
+                        <p>DB = salgspris − variable enhedsomkostninger.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">A – Løbetrøje</th>
+                                        <th class="text-right">B – Jakke</th>
+                                        <th class="text-right">C – Kasket</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Salgspris</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">350</td>
+                                        <td class="text-right">120</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Variable enhedsomkostninger</td>
+                                        <td class="text-right">80</td>
+                                        <td class="text-right">150</td>
+                                        <td class="text-right">40</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>DB pr. stk.</td>
+                                        <td class="text-right">200 − 80 = 120</td>
+                                        <td class="text-right">350 − 150 = 200</td>
+                                        <td class="text-right">120 − 40 = 80</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>DB pr. stk.: <b style="color:#006400;">A 120 kr., B 200 kr., C 80 kr.</b></p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>B. Markedsføringsbidrag pr. stk.</h3>
+                        <p>MFB = DB − markedsføring pr. stk.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">A – Løbetrøje</th>
+                                        <th class="text-right">B – Jakke</th>
+                                        <th class="text-right">C – Kasket</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>DB pr. stk.</td>
+                                        <td class="text-right">120</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">80</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Markedsføring pr. stk.</td>
+                                        <td class="text-right">20</td>
+                                        <td class="text-right">40</td>
+                                        <td class="text-right">10</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>MFB pr. stk.</td>
+                                        <td class="text-right">120 − 20 = 100</td>
+                                        <td class="text-right">200 − 40 = 160</td>
+                                        <td class="text-right">80 − 10 = 70</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>MFB pr. stk.: <b style="color:#006400;">A 100 kr., B 160 kr., C 70 kr.</b> Jakken har det højeste bidrag pr. stk. Det er ikke det samme som det højeste bidrag pr. time.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>C. MFB pr. maskintime og rangering</h3>
+                        <p>MFB pr. time = MFB pr. stk. / maskintimer pr. stk.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">A – Løbetrøje</th>
+                                        <th class="text-right">B – Jakke</th>
+                                        <th class="text-right">C – Kasket</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>MFB pr. stk.</td>
+                                        <td class="text-right">100</td>
+                                        <td class="text-right">160</td>
+                                        <td class="text-right">70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maskintimer pr. stk.</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">5</td>
+                                        <td class="text-right">1</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>MFB pr. time</td>
+                                        <td class="text-right">100 / 2 = 50</td>
+                                        <td class="text-right">160 / 5 = 32</td>
+                                        <td class="text-right">70 / 1 = 70</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rang efter MFB pr. stk.</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">3</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Rang efter MFB pr. time</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">3</td>
+                                        <td class="text-right" style="color:#006400;">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>MFB pr. time: <b style="color:#006400;">C 70 kr., A 50 kr., B 32 kr.</b> Rangering ved knap kapacitet: <b style="color:#006400;">C, A, B</b>.</p>
+                        <p>Jakken ligger øverst, hvis man ser på bidraget pr. stk., og nederst, når man ser på bidraget pr. time. Kasketten er omvendt: lavt bidrag pr. stk., højest pr. time, fordi den kun bruger 1 time.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>D. Optimal produktion</h3>
+                        <p>Først tjekkes, om kapaciteten overhovedet er knap. Timer ved fuld efterspørgsel:</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Maks. efterspørgsel</th>
+                                        <th class="text-right">Timer pr. stk.</th>
+                                        <th class="text-right">Timer ved fuld efterspørgsel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>A – Løbetrøje</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">2</td>
+                                        <td class="text-right">200 · 2 = 400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B – Jakke</td>
+                                        <td class="text-right">80</td>
+                                        <td class="text-right">5</td>
+                                        <td class="text-right">80 · 5 = 400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C – Kasket</td>
+                                        <td class="text-right">300</td>
+                                        <td class="text-right">1</td>
+                                        <td class="text-right">300 · 1 = 300</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold">
+                                        <td>I alt ved fuld efterspørgsel</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">1.100 timer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timer til rådighed</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">800 timer</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#f4cccc;">
+                                        <td>Der mangler</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">300 timer</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <p>1.100 timer ønskes, 800 timer haves. Kapaciteten er knap, og produkterne skal prioriteres.</p>
+
+                        <h5>Fordeling af de 800 timer</h5>
+                        <p>Højeste MFB pr. time først. På hvert trin tages det mindste af efterspørgslen og det, de resterende timer rækker til.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trin</th>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Timer ved start</th>
+                                        <th>Hvor mange kan vi nå?</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer brugt</th>
+                                        <th class="text-right">Timer tilbage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>C – Kasket<br><small>70 kr./time</small></td>
+                                        <td class="text-right">800</td>
+                                        <td>800 / 1 = 800 stk., men efterspørgslen er kun 300. Vi tager 300.</td>
+                                        <td class="text-right">300 stk.</td>
+                                        <td class="text-right">300 · 1 = 300</td>
+                                        <td class="text-right">800 − 300 = 500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>A – Løbetrøje<br><small>50 kr./time</small></td>
+                                        <td class="text-right">500</td>
+                                        <td>500 / 2 = 250 stk., men efterspørgslen er kun 200. Vi tager 200.</td>
+                                        <td class="text-right">200 stk.</td>
+                                        <td class="text-right">200 · 2 = 400</td>
+                                        <td class="text-right">500 − 400 = 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>B – Jakke<br><small>32 kr./time</small></td>
+                                        <td class="text-right">100</td>
+                                        <td>100 / 5 = 20 stk. Efterspørgslen er 80, men timerne rækker kun til 20.</td>
+                                        <td class="text-right">20 stk.</td>
+                                        <td class="text-right">20 · 5 = 100</td>
+                                        <td class="text-right">100 − 100 = 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h5>Sådan lander fordelingen</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Efterspørgsel</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Ikke produceret</th>
+                                        <th class="text-right">Timer</th>
+                                        <th class="text-right">MFB pr. stk.</th>
+                                        <th class="text-right">MFB i alt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>C – Kasket</td>
+                                        <td class="text-right">300</td>
+                                        <td class="text-right">300</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">300</td>
+                                        <td class="text-right">70</td>
+                                        <td class="text-right">300 · 70 = 21.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A – Løbetrøje</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">200</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">100</td>
+                                        <td class="text-right">200 · 100 = 20.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B – Jakke</td>
+                                        <td class="text-right">80</td>
+                                        <td class="text-right">20</td>
+                                        <td class="text-right">60</td>
+                                        <td class="text-right">100</td>
+                                        <td class="text-right">160</td>
+                                        <td class="text-right">20 · 160 = 3.200</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>I alt</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">800</td>
+                                        <td></td>
+                                        <td class="text-right">44.200</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <p>Optimal produktion: <b style="color:#006400;">C 300 stk., A 200 stk., B 20 stk.</b> Kasket og løbetrøje produceres op til efterspørgslen. Af jakkerne produceres 20 af 80, og de sidste 100 timer går til dem. Maskinen er fuldt brugt.</p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>E. Månedligt overskud</h3>
+                        <p>Samme produktion sat ind i en resultatopstilling. MFB skal lande på de 44.200 kr. fra fordelingen ovenfor.</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th>Beregning</th>
+                                        <th class="text-right">Kr.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Omsætning</td>
+                                        <td>300 · 120 + 200 · 200 + 20 · 350</td>
+                                        <td class="text-right">36.000 + 40.000 + 7.000 = 83.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Variable omkostninger</td>
+                                        <td>300 · 40 + 200 · 80 + 20 · 150</td>
+                                        <td class="text-right">12.000 + 16.000 + 3.000 = 31.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Dækningsbidrag</td>
+                                        <td>83.000 − 31.000</td>
+                                        <td class="text-right">52.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Markedsføring</td>
+                                        <td>300 · 10 + 200 · 20 + 20 · 40</td>
+                                        <td class="text-right">3.000 + 4.000 + 800 = 7.800</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>MFB</td>
+                                        <td>52.000 − 7.800</td>
+                                        <td class="text-right">44.200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Faste omkostninger</td>
+                                        <td></td>
+                                        <td class="text-right">25.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Overskud</td>
+                                        <td>44.200 − 25.000</td>
+                                        <td class="text-right" style="color:#006400;">19.200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Kontrol via MFB pr. produkt: 21.000 + 20.000 + 3.200 = 44.200. Overskuddet er <b style="color:#006400;">19.200 kr.</b></p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>F. Hvorfor MFB pr. time og ikke MFB pr. stk.?</h3>
+                        <p>Flaskehalsen er maskintimerne. Ét stk. jakke giver 160 kr. i MFB, men lægger beslag på 5 timer. De samme 5 timer kan bruges på fem kasketter: 5 · 70 = 350 kr. Jakken ser bedst ud pr. stk. og dårligst ud pr. time.</p>
+                        <p>Her er fordelingen, hvis man i stedet rangerer efter MFB pr. stk. (B, A, C) og stadig har 800 timer:</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover table-small-font">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Trin</th>
+                                        <th>Produkt</th>
+                                        <th class="text-right">Timer ved start</th>
+                                        <th>Beslutning</th>
+                                        <th class="text-right">Produktion</th>
+                                        <th class="text-right">Timer brugt</th>
+                                        <th class="text-right">MFB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>B – Jakke<br><small>160 kr./stk.</small></td>
+                                        <td class="text-right">800</td>
+                                        <td>80 · 5 = 400 timer. Hele efterspørgslen kan dækkes.</td>
+                                        <td class="text-right">80 stk.</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">80 · 160 = 12.800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>A – Løbetrøje<br><small>100 kr./stk.</small></td>
+                                        <td class="text-right">400</td>
+                                        <td>200 · 2 = 400 timer. Hele efterspørgslen kan dækkes.</td>
+                                        <td class="text-right">200 stk.</td>
+                                        <td class="text-right">400</td>
+                                        <td class="text-right">200 · 100 = 20.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>C – Kasket<br><small>70 kr./stk.</small></td>
+                                        <td class="text-right">0</td>
+                                        <td>Ingen timer tilbage.</td>
+                                        <td class="text-right">0 stk.</td>
+                                        <td class="text-right">0</td>
+                                        <td class="text-right">0</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="font-weight-bold" style="background:#f4cccc;">
+                                        <td colspan="4">I alt ved forkert rangering</td>
+                                        <td></td>
+                                        <td class="text-right">800</td>
+                                        <td class="text-right">32.800</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th></th>
+                                        <th class="text-right">Optimal: MFB pr. time</th>
+                                        <th class="text-right">Forkert: MFB pr. stk.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>C – Kasket</td>
+                                        <td class="text-right">300 stk. → 21.000</td>
+                                        <td class="text-right">0 stk. → 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A – Løbetrøje</td>
+                                        <td class="text-right">200 stk. → 20.000</td>
+                                        <td class="text-right">200 stk. → 20.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B – Jakke</td>
+                                        <td class="text-right">20 stk. → 3.200</td>
+                                        <td class="text-right">80 stk. → 12.800</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Samlet MFB</td>
+                                        <td class="text-right">44.200</td>
+                                        <td class="text-right">32.800</td>
+                                    </tr>
+                                    <tr class="font-weight-bold">
+                                        <td>Overskud efter 25.000 i faste omk.</td>
+                                        <td class="text-right" style="color:#006400;">19.200</td>
+                                        <td class="text-right">7.800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>Forskellen er 44.200 − 32.800 = <b>11.400 kr.</b> i MFB. De timer, jakken lægger beslag på ud over de 20 stk., kaster mindre af sig end de kasketter, man så må undvære. Derfor rangeres efter MFB pr. flaskehalsenhed.</p>
                     </li>
                 </ul>
             </div>
