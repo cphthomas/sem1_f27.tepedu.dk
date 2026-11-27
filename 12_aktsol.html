@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,392 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body data-page-id="cbs2">
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-7 mx-auto">
+            <div class="col-lg-10 mx-auto">
                 <ul class="timeline">
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
-                        <h2>Aktivitet – Markedsformer og optimering<br>LØSNINGSFORSLAG</h2>
-                        <p>Case: NordicLight A/S. Dokumentér selv med app/Excel; her er facit og fremgangsmåde.</p>
+                        <img src="https://storage.googleapis.com/tepedu/sem1/images/market2.jpg" width="100%" alt="Markedsformer og optimering">
+                        <br><br>
+                        <h2>Aktivitet – Markedsformer, optimering og priselasticitet<br>LØSNINGSFORSLAG</h2>
+                        <p>
+                            Løsningsforslaget indeholder den fulde opgavetekst og alle spørgsmål, så det kan læses selvstændigt — først <b>ASML – EUV-litografianlæg</b> (spørgsmål A–C) og derefter <b>Nordkaffe Risteri – Specialkaffe "Faro"</b> (spørgsmål D–G).
+                            Alle optimeringer, kapacitetsbegrænsningen og punktpriselasticiteterne er tjekket i optimeringsappen. Appen maksimerer dækningsbidraget (DB); overskuddet er DB − FO.
+                        </p>
+                        <div class="link-stack">
+                            <a href="https://optimer.tepedu.dk/optimering2" class="effectLinks" data-replace="Åbn Optimeringsappen i ny fane" target="_blank" rel="noopener noreferrer"><span>App: Optimering (optimer.tepedu.dk/optimering2)</span></a>
+                            <a href="https://optimer.tepedu.dk/pris" class="effectLinks" data-replace="Gå til P og punkt-priselasticitet" target="_blank" rel="noopener noreferrer"><span>App: Pris og punkt-priselasticitet</span></a>
+                        </div>
                     </li>
+
+                    <!-- ASML OPGAVETEKST -->
                     <li class="timeline-item bg-white ml-3 p-4 shadow">
                         <div class="timeline-arrow"></div>
-                        <ol type="A">
-                            <li><b>"Basic":</b> fuldkommen konkurrence (mange udbydere, homogen vare, prisen er givet). <b>"Aura":</b> monopol (én udbyder, prisindflydelse).</li>
-                            <hr>
-                            <li>TO = 0,05X² + 100X + 20.000 ⇒ <b>GROMK = 0,1X + 100</b></li>
-                            <hr>
-                            <li>P = GROMK: 400 = 0,1X + 100 ⇒ <b>X = 3.000</b>. Oms = 1.200.000. TO = 770.000. <b>Overskud = 430.000 kr.</b></li>
-                            <hr>
-                            <li>P = −0,2X + 800 ⇒ <b>GROMS = −0,4X + 800</b></li>
-                            <hr>
-                            <li>GROMK = 0,2X + 80. GROMS = GROMK ⇒ 720 = 0,6X ⇒ <b>X = 1.200</b>, <b>P = 560 kr.</b> Oms = 672.000. TO = 255.000. <b>Overskud = 417.000 kr.</b></li>
-                            <hr>
-                            <li>Ved X = 3.000 er VE = 0,05·3.000 + 100 = 250 kr. Tilbud 180 kr. &lt; 250 kr. ⇒ <b>afvis ordren</b> (dækker ikke de variable omkostninger).</li>
-                            <hr>
-                            <li>Ved monopol er P &gt; GROMS. Overskud maksimeres hvor <b>GROMS = GROMK</b>, ikke hvor P = GROMK (det ville være for stor mængde / for lav pris).</li>
-                        </ol>
+                        <h2>ASML — EUV-litografianlæg</h2>
+                        <p>
+                            Hollandske ASML producerer EUV-litografimaskiner til fremstilling af de mindste mikrochips.
+                        </p>
+                        <ul>
+                            <li>ASML er den eneste virksomhed i verden, der kan levere EUV-anlæg.</li>
+                            <li>Ældre maskiner (DUV) kan ikke fremstille de nyeste mikrochips, så der findes intet nært substitut.</li>
+                            <li>Tusindvis af patenter, specialoptik og meget store investeringer spærrer for nye udbydere.</li>
+                            <li>ASML sætter selv prisen: en lavere pris øger efterspørgslen, og en højere pris dæmper efterspørgslen.</li>
+                        </ul>
+                        <p>
+                            Forenklet model (X i antal EUV-anlæg pr. år, alle beløb i <b>mio. kr.</b>):<br>
+                            <b>P = −20X + 2.000</b><br>
+                            <b>TO = 10X² + 200X + 9.000</b>
+                        </p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>A. Markedsform – ASML (EUV-litografianlæg)</h3>
+                        <p><em>Spørgsmål: Hvilken markedsform kendetegner ASML's EUV-anlæg? Begrund ud fra antal udbydere, substitutter, prisindflydelse og adgangsbarrierer.</em></p>
+                        <hr>
+                        <p>ASML's EUV-anlæg hører under <b style="color:#006400;">monopol</b>:</p>
+                        <ul>
+                            <li><b>Antal udbydere:</b> Én eneste udbyder globalt.</li>
+                            <li><b>Substitutter:</b> Ingen nære substitutter (ældre DUV-maskiner kan ikke fremstille de nyeste chips).</li>
+                            <li><b>Prisindflydelse:</b> ASML sætter selv prisen langs en faldende pris-afsætningsfunktion.</li>
+                            <li><b>Adgangsbarrierer:</b> Ekstremt høje (patenter, specialoptik og meget store investeringer).</li>
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>B. Optimering for ASML</h3>
+                        <p><em>Spørgsmål: Bestem GROMS, GROMK og VE for ASML's EUV-anlæg, og beregn den overskudsoptimerende mængde, pris, dækningsbidrag og overskud. Tjek resultatet i optimeringsappen.</em></p>
+                        <hr>
+                        <p>Givet: <b>P = −20X + 2.000</b> og <b>TO = 10X² + 200X + 9.000</b> (mio. kr., X i anlæg pr. år).</p>
+                        <ul>
+                            <li><b>GROMS:</b> Dobbelt hældning af P ⇒ <b>GROMS = −40X + 2.000</b></li>
+                            <li><b>GROMK:</b> Den afledte af TO ⇒ <b>GROMK = 20X + 200</b> (FO = 9.000 forsvinder ved differentiation)</li>
+                            <li><b>VE:</b> Halv hældning af GROMK (TVO / X) ⇒ <b>VE = 10X + 200</b></li>
+                        </ul>
+                        <p><b>Optimering (GROMS = GROMK):</b></p>
+                        <p>
+                            −40X + 2.000 = 20X + 200<br>
+                            1.800 = 60X<br>
+                            <b>X<sup>opt</sup> = 30 anlæg pr. år</b><br>
+                            <b>P<sup>opt</sup></b> = −20 · 30 + 2.000 = <b>1.400 mio. kr. pr. anlæg</b>
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Post</th>
+                                        <th>Beregning</th>
+                                        <th class="text-right">Mio. kr.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Omsætning (OMS)</td>
+                                        <td>1.400 · 30</td>
+                                        <td class="text-right">42.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VE ved X = 30</td>
+                                        <td>10 · 30 + 200</td>
+                                        <td class="text-right">500 pr. anlæg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TVO</td>
+                                        <td>500 · 30 = 10 · 30² + 200 · 30</td>
+                                        <td class="text-right">15.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dækningsbidrag (DB)</td>
+                                        <td>42.000 − 15.000</td>
+                                        <td class="text-right">27.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Faste omkostninger (FO)</td>
+                                        <td>Konstantled i TO</td>
+                                        <td class="text-right">9.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Totale omkostninger (TO)</td>
+                                        <td>15.000 + 9.000</td>
+                                        <td class="text-right">24.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Overskud</td>
+                                        <td>27.000 − 9.000 (eller 42.000 − 24.000)</td>
+                                        <td class="text-right" style="color:#006400;">18.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            <b>Tjek i optimeringsappen:</b> Tast P med <b>a = −20</b>, <b>b = 2000</b> og GROMK med <b>a = 20</b>, <b>b = 200</b>.
+                            Appen giver P<sup>opt</sup> = 1.400, X<sup>opt</sup> = 30, VE<sup>opt</sup> = 500, Omsætning = 42.000, TVO = 15.000 og DB<sup>opt</sup> = 27.000.
+                        </p>
+                        <img src="https://storage.googleapis.com/tepedu/sem1/images/f27-12-akt-asml.png" width="100%" style="border: 1px solid #e2e6ef; margin: 0.75rem 0;" alt="Optimeringsapp: ASML EUV-anlæg, P = 1.400, X = 30, DB = 27.000">
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>C. Priselasticitet og omsætningsmaksimum for ASML</h3>
+                        <p><em>Spørgsmål: Beregn punktpriselasticiteten e<sub>p</sub> for ASML ved den optimale pris, og fortolk tallet. Find desuden pris, mængde og overskud ved omsætningsmaksimum (e<sub>p</sub> = −1), og forklar hvorfor ASML ikke bør vælge omsætningsmaksimum.</em></p>
+                        <hr>
+                        <p><b>Punktpriselasticitet ved P<sup>opt</sup> = 1.400:</b></p>
+                        <p>
+                            e<sub>p</sub> = −P / (b − P) = −1.400 / (2.000 − 1.400) = −1.400 / 600 = <b>−2,33</b>
+                        </p>
+                        <p>
+                            <b>Fortolkning:</b> Efterspørgslen er <b>elastisk</b> (e<sub>p</sub> &lt; −1). Hvis prisen hæves med 1 % fra 1.400 mio. kr., falder afsætningen med ca. 2,33 %.
+                        </p>
+                        <p><b>Omsætningsmaksimum (GROMS = 0 / e<sub>p</sub> = −1):</b></p>
+                        <p>
+                            −40X + 2.000 = 0 ⇒ <b>X = 50 anlæg</b> og <b>P = −20 · 50 + 2.000 = 1.000 mio. kr.</b> (= b/2).
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Sammenligning</th>
+                                        <th class="text-right">Overskudsmaksimum (GROMS = GROMK)</th>
+                                        <th class="text-right">Omsætningsmaksimum (GROMS = 0)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mængde (X)</td>
+                                        <td class="text-right">30 anlæg</td>
+                                        <td class="text-right">50 anlæg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pris (P)</td>
+                                        <td class="text-right">1.400 mio. kr.</td>
+                                        <td class="text-right">1.000 mio. kr.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Priselasticitet (e<sub>p</sub>)</td>
+                                        <td class="text-right">−2,33</td>
+                                        <td class="text-right">−1,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Omsætning</td>
+                                        <td class="text-right">42.000 mio. kr.</td>
+                                        <td class="text-right">50.000 mio. kr.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TO</td>
+                                        <td class="text-right">24.000 mio. kr.</td>
+                                        <td class="text-right">10 · 50² + 200 · 50 + 9.000 = 44.000 mio. kr.</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Overskud</td>
+                                        <td class="text-right" style="color:#006400;">18.000 mio. kr.</td>
+                                        <td class="text-right">6.000 mio. kr.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            <b>Hvorfor ikke omsætningsmaksimum?</b> Omsætningen stiger med 8.000 mio. kr., men omkostningerne stiger med 20.000 mio. kr.
+                            Alle 20 ekstra anlæg mellem X = 30 og X = 50 koster mere i GROMK (800 til 1.200) end de giver i GROMS (800 ned til 0), så overskuddet falder med <b>12.000 mio. kr.</b>
+                        </p>
+                    </li>
+
+                    <!-- NORDKAFFE OPGAVETEKST -->
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h2>Nordkaffe Risteri — Specialkaffe "Faro"</h2>
+                        <p>
+                            Nordkaffe Risteri sælger sin egen signaturblanding "Faro" (1 kg hele bønner) til caféer og via webshop.
+                        </p>
+                        <ul>
+                            <li>Der findes mange mikroristerier og kaffebrands, som kæmper om de samme kunder.</li>
+                            <li>"Faro" har egen risteprofil, bønnesammensætning og brand, så kunderne oplever produktet som forskelligt fra konkurrenternes. Hæves prisen, falder salget, men ikke til nul.</li>
+                            <li>Adgangsbarriererne er lave — nye specialristerier kan relativt let starte op.</li>
+                        </ul>
+                        <p>
+                            Pris-afsætning og totale ugentlige omkostninger (P og TO i kr., X i kg pr. uge):<br>
+                            <b>P = −0,2X + 360</b><br>
+                            <b>TO = 0,05X² + 60X + 20.000</b>
+                        </p>
+                        <p>
+                            <b>Kapacitetsbegrænsning:</b> Under vedligeholdelse af den ene rister kan Nordkaffe maksimalt producere <b>500 kg pr. uge</b>.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>D. Markedsform – Nordkaffe Risteri ("Faro")</h3>
+                        <p><em>Spørgsmål: Hvilken markedsform kendetegner Nordkaffes specialkaffe "Faro"? Begrund ud fra antal udbydere, produktdifferentiering, prisindflydelse og adgangsbarrierer.</em></p>
+                        <hr>
+                        <p>Nordkaffes specialkaffe "Faro" hører under <b style="color:#006400;">monopolistisk konkurrence</b>:</p>
+                        <ul>
+                            <li><b>Antal udbydere:</b> Mange mikroristerier og kaffebrands.</li>
+                            <li><b>Produktdifferentiering:</b> Differentieret vare med egen risteprofil, opskrift og brand.</li>
+                            <li><b>Prisindflydelse:</b> Faldende pris-afsætningsfunktion — Nordkaffe sætter selv prisen, og en mindre prisstigning fjerner ikke hele salget.</li>
+                            <li><b>Adgangsbarrierer:</b> Lave — nye mikroristerier kan relativt let træde ind på markedet.</li>
+                        </ul>
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>E. Optimering og priselasticitet for Nordkaffe</h3>
+                        <p><em>Spørgsmål: Bestem GROMS, GROMK og VE for "Faro", og beregn den overskudsoptimerende mængde, pris, dækningsbidrag og kortsigtede overskud pr. uge (uden kapacitetsbegrænsning). Beregn desuden punktpriselasticiteten e<sub>p</sub> ved den optimale pris, og forklar hvorfor optimum altid ligger i det elastiske område (e<sub>p</sub> &lt; −1). Tjek resultatet i optimeringsappen.</em></p>
+                        <hr>
+                        <p>Givet: <b>P = −0,2X + 360</b> og <b>TO = 0,05X² + 60X + 20.000</b> (kr., X i kg pr. uge).</p>
+                        <ul>
+                            <li><b>GROMS:</b> <b>−0,4X + 360</b></li>
+                            <li><b>GROMK:</b> <b>0,1X + 60</b></li>
+                            <li><b>VE:</b> <b>0,05X + 60</b></li>
+                        </ul>
+                        <p><b>Optimering (GROMS = GROMK):</b></p>
+                        <p>
+                            −0,4X + 360 = 0,1X + 60<br>
+                            300 = 0,5X<br>
+                            <b>X<sup>opt</sup> = 600 kg pr. uge</b><br>
+                            <b>P<sup>opt</sup></b> = −0,2 · 600 + 360 = <b>240 kr. pr. kg</b>
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Post</th>
+                                        <th>Beregning</th>
+                                        <th class="text-right">Kr. pr. uge</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Omsætning (OMS)</td>
+                                        <td>240 · 600</td>
+                                        <td class="text-right">144.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VE ved X = 600</td>
+                                        <td>0,05 · 600 + 60</td>
+                                        <td class="text-right">90 pr. kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TVO</td>
+                                        <td>90 · 600 = 0,05 · 600² + 60 · 600</td>
+                                        <td class="text-right">54.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dækningsbidrag (DB)</td>
+                                        <td>144.000 − 54.000</td>
+                                        <td class="text-right">90.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Faste omkostninger (FO)</td>
+                                        <td>Konstantled i TO</td>
+                                        <td class="text-right">20.000</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Kortsigtet overskud</td>
+                                        <td>90.000 − 20.000</td>
+                                        <td class="text-right" style="color:#006400;">70.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><b>Punktpriselasticitet ved P<sup>opt</sup> = 240:</b></p>
+                        <p>
+                            e<sub>p</sub> = −P / (b − P) = −240 / (360 − 240) = −240 / 120 = <b>−2,00</b> (elastisk: 1 % prisstigning giver 2 % fald i salget).
+                        </p>
+                        <p>
+                            <b>Hvorfor ligger optimum altid i det elastiske område (e<sub>p</sub> &lt; −1)?</b><br>
+                            Når GROMK &gt; 0, skal GROMS = GROMK også være positiv. GROMS er kun positiv i det elastiske område (P &gt; b/2).
+                            I det uelastiske område (e<sub>p</sub> mellem −1 og 0) er GROMS negativ — her kan virksomheden hæve prisen og både øge omsætningen og sænke omkostningerne, altså med sikkerhed øge sit overskud.
+                        </p>
+                        <p>
+                            <b>Tjek i optimeringsappen:</b> Tast P med <b>a = −0,2</b>, <b>b = 360</b> og GROMK med <b>a = 0,1</b>, <b>b = 60</b>.
+                            Appen giver P<sup>opt</sup> = 240, X<sup>opt</sup> = 600, VE<sup>opt</sup> = 90, Omsætning = 144.000, TVO = 54.000, DB<sup>opt</sup> = 90.000 og e<sub>p</sub> = −2,00.
+                        </p>
+                        <img src="https://storage.googleapis.com/tepedu/sem1/images/f27-12-akt-nordkaffe.png" width="100%" style="border: 1px solid #e2e6ef; margin: 0.75rem 0;" alt="Optimeringsapp: Nordkaffe Faro, P = 240, X = 600, DB = 90.000">
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>F. Nordkaffe med kapacitetsbegrænsning på 500 kg pr. uge</h3>
+                        <p><em>Spørgsmål: Hvad bliver Nordkaffes optimale mængde, pris, dækningsbidrag, overskud og priselasticitet ved kapacitetsbegrænsningen på 500 kg pr. uge? Hvor meget mister virksomheden i dækningsbidrag pr. uge?</em></p>
+                        <hr>
+                        <p>
+                            Den ubegrænsede optimale mængde er 600 kg, men kapaciteten er kun <b>500 kg</b>. Da GROMS &gt; GROMK op til 600 kg (ved X = 500 er GROMS = 160 &gt; GROMK = 110), udnyttes hele kapaciteten:
+                        </p>
+                        <ul>
+                            <li><b>Optimal mængde:</b> <b>X = 500 kg pr. uge</b></li>
+                            <li><b>Optimal pris:</b> P = −0,2 · 500 + 360 = <b>260 kr. pr. kg</b></li>
+                            <li><b>Priselasticitet ved P = 260:</b> e<sub>p</sub> = −260 / (360 − 260) = −260 / 100 = <b>−2,60</b></li>
+                        </ul>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered table-hover">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>Post</th>
+                                        <th class="text-right">Uden begrænsning (600 kg)</th>
+                                        <th class="text-right">Med kapacitet 500 kg</th>
+                                        <th class="text-right">Forskel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pris (P)</td>
+                                        <td class="text-right">240 kr.</td>
+                                        <td class="text-right">260 kr.</td>
+                                        <td class="text-right">+20 kr.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Omsætning</td>
+                                        <td class="text-right">144.000 kr.</td>
+                                        <td class="text-right">130.000 kr.</td>
+                                        <td class="text-right">−14.000 kr.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VE</td>
+                                        <td class="text-right">90 kr./kg</td>
+                                        <td class="text-right">85 kr./kg</td>
+                                        <td class="text-right">−5 kr./kg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TVO</td>
+                                        <td class="text-right">54.000 kr.</td>
+                                        <td class="text-right">42.500 kr.</td>
+                                        <td class="text-right">−11.500 kr.</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#fff2cc;">
+                                        <td>Dækningsbidrag (DB)</td>
+                                        <td class="text-right">90.000 kr.</td>
+                                        <td class="text-right">87.500 kr.</td>
+                                        <td class="text-right">−2.500 kr.</td>
+                                    </tr>
+                                    <tr class="font-weight-bold" style="background:#d9ead3;">
+                                        <td>Overskud (DB − 20.000)</td>
+                                        <td class="text-right">70.000 kr.</td>
+                                        <td class="text-right">67.500 kr.</td>
+                                        <td class="text-right">−2.500 kr.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>
+                            Nordkaffe mister <b>2.500 kr. pr. uge</b> i dækningsbidrag og overskud.
+                            I optimeringsappen verificeres tallene ved at klikke på <b>Kapacitetsbegrænsning</b> og indtaste <b>500</b>.
+                        </p>
+                        <img src="https://storage.googleapis.com/tepedu/sem1/images/f27-12-akt-nordkaffe-kap.png" width="100%" style="border: 1px solid #e2e6ef; margin: 0.75rem 0;" alt="Optimeringsapp: Nordkaffe Faro med kapacitetsbegrænsning 500 kg, P = 260, X = 500, DB = 87.500">
+                    </li>
+
+                    <li class="timeline-item bg-white ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                        <h3>G. Nordkaffe på længere sigt</h3>
+                        <p><em>Spørgsmål: Forklar, hvad der forventes at ske med Nordkaffes efterspørgsel og overskud på længere sigt, når adgangsbarriererne er lave.</em></p>
+                        <hr>
+                        <p>
+                            Det kortsigtede overnormale overskud på 70.000 kr./uge tiltrækker nye mikroristerier, fordi adgangsbarriererne er lave.
+                            Når flere aktører træder ind på markedet, deles kunderne mellem flere udbydere: Nordkaffes individuelle pris-afsætningsfunktion rykker nedad/indad, og efterspørgslen bliver mere elastisk.
+                            På langt sigt presses det overnormale overskud ned mod <b>nul</b>, hvor salgsprisen netop dækker de totale enhedsomkostninger (P = TE).
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -43,4 +403,5 @@
     </div>
     <script src="global.js"></script>
 </body>
+
 </html>
